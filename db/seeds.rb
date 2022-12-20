@@ -1,7 +1,26 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+puts "Start"
+Event.destroy_all
+events = Event.create([
+    {
+        title: "Колонiaльные товары.",
+        date: "25 декабря",
+        description: "Кофе и чай, какао и шоколад, рис и специи, алкоголь и табак: от самовара до аэропресса, от торговых караванов до кофеен третьей волны, от гастрономических редкостей до базового ассортимента любого магазина шаговой доступности, от светских салонов до мест сбора революционеров и творческой интеллигенции. Зимняя игра со вкусом в двух столицах.",
+        image: "https://img.runcity.org/storage/5/00/96d2cd89499eb4aad18c415e5a564005.png",
+        city: "Москва",
+    },
+    {
+        title: "Корабль сказок",
+        date: "5 января 2023",
+        description: "",
+        image: "https://img.runcity.org/storage/c/77/4bb7ac658cfdcbf9abb6e0d0b000877c.png",
+        city: "Лодейное Поле и окрестности",
+    },
+        {
+        title: "Бегущий Город Краснодар 2023",
+        date: "11 марта 2023",
+        description: "Большая городская игра",
+        image: "https://img.runcity.org/storage/2/ef/878b6b7a4286a0b743156d4ef6533ef2.png",
+        city: "Краснодар",
+    },
+])
+puts "End"
