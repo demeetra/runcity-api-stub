@@ -10,7 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_20_201650) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_21_111740) do
+  create_table "checkpoints", force: :cascade do |t|
+    t.string "title"
+    t.boolean "is_riddle"
+    t.string "address"
+    t.string "text"
+    t.string "answer"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "event_id"
+    t.string "image"
+    t.index ["event_id"], name: "index_checkpoints_on_event_id"
+  end
+
   create_table "events", force: :cascade do |t|
     t.string "title"
     t.string "date"

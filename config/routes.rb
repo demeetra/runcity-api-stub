@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get 'checkpoints/index'
+  get 'checkpoints/show'
+  get 'checkpoints/create'
+  get 'checkpoints/update'
+  get 'checkpoints/destroy'
   get 'events/index'
   get 'events/create'
   get 'events/update'
@@ -7,6 +12,7 @@ Rails.application.routes.draw do
 
   scope '/api/v1' do
     resources :events
+    resources :checkpoints
   end
 
   # Defines the root path route ("/")
