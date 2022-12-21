@@ -20,7 +20,7 @@ Checkpoint.create!([
   },
   {
     event_id: event.id,
-    title: 'КП1',
+    title: 'КП2',
     is_riddle: true,
     text: 'см картинку. Панно над входом.',
     image: 'https://img.runcity.org/storage/3/4d/316e2a4aae06f8ea0b32a8c13214f4d3.jpg',
